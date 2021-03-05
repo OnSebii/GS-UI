@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="row">
+      <menuBar class="col-sm-1-half" @selectedTag="selected = $event"></menuBar>
+      <drawContent class="col-11" :selected="selected"></drawContent>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import menuBar from './components/menuBar.vue';
+import drawContent from '@/components/drawContent.vue';
 
 export default {
+  data() {
+    return {
+      selected: undefined,
+    };
+  },
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    menuBar,
+    drawContent,
+  },
+};
 </script>
 
 <style>
@@ -21,8 +30,20 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+.col-sm-1-half {
+  position: relative;
+  min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-half {
+    float: left;
+    width: 29.16666667%;
+  }
+}
+
+.row {
+  margin: 0 !important;
 }
 </style>

@@ -1,9 +1,15 @@
 <template>
-  <div></div>
+  <div style="width: 200px;">
+    <h1>{{ selected }}</h1>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    selected: Number,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
