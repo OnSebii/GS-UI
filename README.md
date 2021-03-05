@@ -1,4 +1,4 @@
-# baily
+# Baily.at x Sebos.ch
 
 ## Project setup
 ```
