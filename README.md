@@ -1,4 +1,4 @@
-# Baily.at x Sebos.ch
+# Gamesense UI
 
 ## Project setup
 ```
