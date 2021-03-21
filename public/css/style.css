@@ -3,13 +3,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0c0c0c;
-  min-height: 100% !important;
   height: 100%;
-
 }
 
-h1, a, li {
-  color: #B1B1B1;
+h1,
+a {
+  color: #b1b1b1;
 }
 
 .box1 {
@@ -27,5 +26,5 @@ h1, a, li {
 .gsBox {
   background: linear-gradient(to right, #1e5799 0%, #f300ff 50%, #e0ff00 100%);
   height: 2px;
-  border-bottom: 1px solid #0C0C0C;
+  border-bottom: 1px solid #0c0c0c;
 }

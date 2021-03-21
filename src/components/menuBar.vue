@@ -1,20 +1,22 @@
 <template>
-  <div class="ui">
-    <a class="gsIcons" @click="selectedTag(1)" :class="{ gsIconsSelected: selected == 1 }">A</a>
-    <br />
-    <a class="gsIcons" @click="selectedTag(2)" :class="{ gsIconsSelected: selected == 2 }">G</a>
-    <br />
-    <a class="gsIcons" @click="selectedTag(3)" :class="{ gsIconsSelected: selected == 3 }">C</a>
-    <br />
-    <a class="gsIcons" @click="selectedTag(4)" :class="{ gsIconsSelected: selected == 4 }">D</a>
-    <br />
-    <a class="gsIcons" @click="selectedTag(5)" :class="{ gsIconsSelected: selected == 5 }">E</a>
-    <br />
-    <a class="gsIcons" @click="selectedTag(6)" :class="{ gsIconsSelected: selected == 6 }">F</a>
-    <br />
-    <img alt="Config" src="../img/cfg.svg" @click="selectedTag(7)" :class="{ gsIconsSelected: selected == 7 }" />
-    <br />
-    <a @click="selectedTag(8)" :class="{ gsIconsSelected: selected == 8 }">Lua</a>
+  <div>
+    <div class="ui">
+      <a class="gsIcons" @click="selectedTag(1)" :class="{ gsIconsSelected: selected == 1 }">A</a>
+      <br />
+      <a class="gsIcons" @click="selectedTag(2)" :class="{ gsIconsSelected: selected == 2 }">G</a>
+      <br />
+      <a class="gsIcons" @click="selectedTag(3)" :class="{ gsIconsSelected: selected == 3 }">C</a>
+      <br />
+      <a class="gsIcons" @click="selectedTag(4)" :class="{ gsIconsSelected: selected == 4 }">D</a>
+      <br />
+      <a class="gsIcons" @click="selectedTag(5)" :class="{ gsIconsSelected: selected == 5 }">E</a>
+      <br />
+      <a class="gsIcons" @click="selectedTag(6)" :class="{ gsIconsSelected: selected == 6 }">F</a>
+      <br />
+      <img alt="Config" src="../img/cfg.svg" @click="selectedTag(7)" :class="{ gsIconsSelected: selected == 7 }" />
+      <br />
+      <p @click="selectedTag(8)" :class="{ gsIconsSelected: selected == 8 }">Lua</p>
+    </div>
   </div>
 </template>
 
@@ -58,14 +60,22 @@ export default {
 }
 
 .ui {
-  width: 80px;
-  background-image: url('../img/gsChains.png');
-  background-repeat: repeat;
   margin-top: 10px;
 }
 
 img {
+  width: 80px;
   background-color: #0c0c0c;
+}
+
+p {
+  width: 80px;
+  font-size: 25px;
+  margin: 10px 0px;
+  text-align: center;
+  background-color: #0c0c0c;
+  color: #5a5a5a;
+  font-weight: bold;
 }
 
 @font-face {
